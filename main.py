@@ -1,16 +1,13 @@
-
 from pygame import *
 from check_files import check_files
 #inzialate fonts and mixer
 font.init()
 mixer.init()
-#score racket1
-score1 = 0
-#score racket2
-score2 = 0
-FPS = 60
-speed_x = 3
-speed_y = 3
+score1 = 0 #score racket1
+score2 = 0 #score racket2
+FPS = 60 
+speed_x = 3 #Racket Speed on x 
+speed_y = 3 #Racket Speed on y
 game = True
 finish = False
 back = (200,255,255)
@@ -22,6 +19,7 @@ racket_hit = mixer.Sound('sound_fx//racket_hit.wav')
 wall = mixer.Sound('sound_fx//wall.wav')
 #fonts
 font_score = font.Font(None,35)
+
 check_files(required_files)
 
 

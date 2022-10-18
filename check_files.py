@@ -6,9 +6,9 @@ def check_files( required_files):
     for file in required_files:
         file_path = Path(file)
         if file_path.is_file() == True:
-            print('File {} has found'.format(file))
+            print(f'File {file} has found')
         else:
-            print('File {} not found'.format(file))
+            print(f'File {file} not found')
             corrupted_files = True
     if corrupted_files == True:
         exit = input('Press enter to exit.....')
